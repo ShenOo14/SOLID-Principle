@@ -26,7 +26,7 @@ print('-----------------')
 device3 = Switch("electric lamp")
 device3.turn_on()
 device3.turn_off()
-device23.turn_on()
+device3.turn_on()
 
 
 
