@@ -12,12 +12,22 @@ class KeyStatus:
 device1 = KeyStatus("television")
 device1.turn_on()
 device1.turn_off()
+device1.turn_on()
 
 print('-----------------')
+
 device2 = KeyStatus("fan")
 device2.turn_on()
 device2.turn_off()
 device2.turn_on()
+
+print('-----------------')
+
+device3 = KeyStatus("electric lamp")
+device3.turn_on()
+device3.turn_off()
+device23.turn_on()
+
 
 
 
