@@ -1,14 +1,25 @@
-class Switch:
+
+class KeyStatus:
     def __init__(self, device):
         self.device = device
-
-
-class KeyStatus(Switch):
-    def turn_on(self, device):
-      print(f" {device}  is Switched on")
-    def turn_off(self, device):
-        print(f" {device} Switched off")
+       
+    def turn_on(self):
+        print(f"{self.device} is Switched on")
+    def turn_off(self):
+        print(f"{self.device} is Switched off")
         
         
-obj=Switch("television")
-obj.turn_on()
+device1 = KeyStatus("television")
+device1.turn_on()
+device1.turn_off()
+
+print('-----------------')
+device2 = KeyStatus("fan")
+device2.turn_on()
+device2.turn_off()
+device2.turn_on()
+
+
+
+
+
