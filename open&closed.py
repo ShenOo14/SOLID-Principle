@@ -1,5 +1,17 @@
 from abc import ABC, abstractmethod
 
+
+#violating open closed principle
+class Triangle:
+    def __init__(self, base, height):
+        self.base = base
+        self.height = height
+
+    def area(self):
+        return 0.5 * self.base * self.height
+    
+    
+ #achieving open closed principle
 class Shape(ABC):
     @abstractmethod
     def area(self):
