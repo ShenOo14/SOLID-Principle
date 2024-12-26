@@ -1,3 +1,13 @@
+#violating liskov substitution principle
+class Bird:
+    def __init__(self, eat):
+        self.eat = eat
+
+    def fly(self):
+        raise NotImplementedError("This bird can't fly")
+    
+    
+#acchieving liskov substitution principle 
 class Bird:
     def __init__(self,eat):
         self.eat = eat
@@ -17,3 +27,7 @@ print("-" *30)
 
 penguin = Bird("fish")
 print(penguin.eat)
+print("-" *30)
+ta3er = flyableBird("akl")
+print(ta3er.eat)
+ta3er.fly()
